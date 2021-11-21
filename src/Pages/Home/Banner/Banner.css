@@ -1,0 +1,18 @@
+/* .banner{
+    background-image: url(../../../images/banner/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.banner-text{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner{
+    background: linear-gradient(0deg, hsla(0, 0%, 100%, 1) 32%, hsla(203, 60%, 65%, 1) 100%);
+}
+
+.heading{
+    font-size: 45px;
+}

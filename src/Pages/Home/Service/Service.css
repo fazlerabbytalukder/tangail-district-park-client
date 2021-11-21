@@ -1,0 +1,16 @@
+.card-backgrond{
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 32%, hsla(203, 60%, 65%, 1) 100%);
+
+}
+
+.rounded-img{
+    border-radius: 15px;
+}
+
+.card-round{
+    border-radius: 15px;
+}
+
+.height-img{
+    height: 250px;
+}

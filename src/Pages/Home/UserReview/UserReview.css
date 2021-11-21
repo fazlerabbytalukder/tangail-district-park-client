@@ -1,0 +1,22 @@
+.card-img{
+    border-radius: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+.conatiner-carusel{
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.user-img{
+    margin-left: 20px;
+}
+
+.button-top{
+    margin-top: 70px;
+}
