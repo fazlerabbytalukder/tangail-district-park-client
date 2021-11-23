@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap';
 import './Banner.css';
-import banner from '../../../images/banner/banner1.png';
 import banner1 from '../../../images/banner/banner2.png';
 
 const Banner = () => {

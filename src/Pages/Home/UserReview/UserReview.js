@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import useAuth from '../../../Hooks/useAuth';
 import { useHistory } from 'react-router';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import feedbackImg from '../../../images/banner/user review.jpg';
 
 
 const UserReview = () => {
@@ -45,21 +46,21 @@ const UserReview = () => {
 
         if (user.email && data.feedback !== '') {
             fetch('https://pure-mountain-33189.herokuapp.com/userReview', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                if (result.insertedId) {
-                    alert('feedback successfully');
-                    reset();
-                    history.push("/");
-                    window.location.reload();
-                }
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
             })
+                .then(res => res.json())
+                .then(result => {
+                    if (result.insertedId) {
+                        alert('feedback successfully');
+                        reset();
+                        history.push("/");
+                        window.location.reload();
+                    }
+                })
         }
         else {
             alert('please login first')
@@ -90,21 +91,29 @@ const UserReview = () => {
             </Container>
 
             <div className='mt-5'>
-                <div>
-                    <div className='d-flex justify-content-center align-items-center'>
-                        <form className="register-form form-design shadow" onSubmit={handleSubmit(onSubmit)}>
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <div className='me-4'>
-                                    <img src={user.photoURL} alt="" className='ms-3' />
-                                    <h4 className=''>{user.displayName}</h4>
-                                </div>
-                                <div>
-                                    <textarea required placeholder="Feedback US" type='textarea' className='w-100 mt-1 rounded' {...register("feedback")} />
-                                    <input type="submit" />
-                                </div>
+                <div className="shadow p-3">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <img className="img-fluid w-75" src={feedbackImg} alt="" />
+                        </div>
+                        <div className="col-md-6">
+                            <h3 className="fw-bold my-2 text-center">Please Review Our Website</h3>
+                            <div className='d-flex justify-content-center align-items-center'>
+                                
+                                <form className="register-form form-design shadow" onSubmit={handleSubmit(onSubmit)}>
+                                    <div className='d-flex justify-content-between align-items-center'>
+                                        <div className='me-4'>
+                                            <img src={user.photoURL} alt="" className='ms-3' />
+                                            <h4 className=''>{user.displayName}</h4>
+                                        </div>
+                                        <div>
+                                            <textarea required placeholder="Feedback US" type='textarea' className='w-100 mt-1 rounded' {...register("feedback")} />
+                                            <input style={{backgroundColor:'blue', color:'white'}} type="submit" />
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
