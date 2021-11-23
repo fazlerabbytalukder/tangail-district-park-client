@@ -94,10 +94,10 @@ const UserReview = () => {
                 <div className="shadow p-3">
                     <div className="row">
                         <div className="col-md-6">
-                            <img className="img-fluid w-75" src={feedbackImg} alt="" />
+                            <img style={{width:'450px'}} className="img-fluid" src={feedbackImg} alt="" />
                         </div>
                         <div className="col-md-6">
-                            <h3 className="fw-bold my-2 text-center">Please Review Our Website</h3>
+                            <h3 className="fw-bold my-2 text-center mt-5">Please Review Our Website</h3>
                             <div className='d-flex justify-content-center align-items-center'>
                                 
                                 <form className="register-form form-design shadow" onSubmit={handleSubmit(onSubmit)}>
