@@ -104,7 +104,7 @@ const UserReview = () => {
                                     <div className='d-flex justify-content-between align-items-center'>
                                         <div className='me-4'>
                                             <img src={user.photoURL} alt="" className='ms-3' />
-                                            <h4 className=''>{user.displayName}</h4>
+                                            <h4 className='ms-4'>{user.displayName}</h4>
                                         </div>
                                         <div>
                                             <textarea required placeholder="Feedback US" type='textarea' className='w-100 mt-1 rounded' {...register("feedback")} />
