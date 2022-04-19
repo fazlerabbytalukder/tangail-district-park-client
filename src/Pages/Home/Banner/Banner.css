@@ -10,7 +10,7 @@
 }
 
 .banner-img{
-    height: 41rem;
+    height: 41.5rem;
 }
 
 .carusel-cations{
@@ -34,11 +34,6 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
-}
-
-.carusel-paragraph{
-    padding: 0 8rem;
-    margin: 1.5rem 0;
 }
 
 .button-design-1{

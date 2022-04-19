@@ -2,3 +2,19 @@
     background-color: white;
     padding: .6rem 1rem;
 }
+
+.button-design-3{
+    background-color: #36C5D5;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    color: white;
+    font-weight: 600;
+}
+
+.button-design-4{
+    border: 1px solid #36C5D5;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    color: black;
+    font-weight: 600;
+}

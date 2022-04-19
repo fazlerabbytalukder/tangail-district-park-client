@@ -40,19 +40,19 @@ const Header = () => {
                                     <Nav.Link as={Link} to='/addNewService' className='fw-bold text-dark'>
                                         Add New Service
                                     </Nav.Link>
-                                    <Nav.Link as={Link} to="/home" onClick={logOut} >
-                                        Logout
-                                    </Nav.Link>
-                                    <Nav.Link as={Link} to="/home">
+                                    <Nav.Link as={Link} to="/home" className='button-design-4 me-md-2'>
                                         {user?.displayName}
+                                    </Nav.Link>
+                                    <Nav.Link as={Link} to="/home" onClick={logOut}  className='button-design-3'>
+                                        Logout
                                     </Nav.Link>
                                 </>
                                     :
                                     <>
-                                        <Nav.Link as={Link} to="/login" className="btn btn-secondary rounded-pill px-4 border-0 me-2 ms-2 fw-bold text-white">
+                                        <Nav.Link as={Link} to="/login" className="button-design-3">
                                             Login
                                         </Nav.Link>
-                                        <Nav.Link as={Link} to="/register" className="btn btn-primary rounded-pill text-light px-4 fw-bold">
+                                        <Nav.Link as={Link} to="/register" className="button-design-4 ms-2">
                                             Sign up
                                         </Nav.Link>
                                     </>
