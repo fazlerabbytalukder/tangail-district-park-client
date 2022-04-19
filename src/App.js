@@ -19,7 +19,6 @@ function App() {
     <div className="">
       <AuthProvider>
         <BrowserRouter>
-          <Header></Header>
           <Switch>
             <Route exact path='/'>
               <Home></Home>
