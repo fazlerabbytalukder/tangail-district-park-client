@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-import logo from '../../../images/logo/logo.png';
+import logo from '../../../images/logo/logo-1.png';
 import './Header.css';
 
 const Header = () => {
@@ -16,10 +16,9 @@ const Header = () => {
                             <img
                                 alt=""
                                 src={logo}
-                                width="40"
+                                width="100"
                                 className="d-inline-block align-top"
                             />
-                            <h4 className='ms-2'>TD Park</h4>
                         </div>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
