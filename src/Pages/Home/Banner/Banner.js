@@ -11,31 +11,46 @@ const Banner = () => {
                 <Header></Header>
             </div>
             <div>
-            <Carousel fade>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 banner-img"
-                        src={bannerImg2}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 banner-img"
-                        src={bannerImg1}
-                        alt="Second slide"
-                    />
+                <Carousel fade>
+                    <Carousel.Item >
+                        <div className='carsuel-items'>
+                        <img
+                            className="d-block w-100 banner-img"
+                            src={bannerImg2}
+                            alt="First slide"
+                            />
+                            <div className="overlay"></div>
+                        </div>
+                        <Carousel.Caption className='carusel-cations'>
+                            <h5>Our Park Choose A Holiday Home</h5>
+                            <h1 className='carusel-header'>A Full Day Of Fun For The <br /> Entire Family</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos illo voluptatibus dolor optio laboriosam sit recusandae iste porro molestiae.</p>
+                            <button>GET STARTED</button>
+                            <button>CONTACT US</button>
+                        </Carousel.Caption>
+                        
+                    </Carousel.Item>
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+
+                    <Carousel.Item>
+                    <div className='carsuel-items'>
+                        <img
+                            className="d-block w-100 banner-img"
+                            src={bannerImg1}
+                            alt="First slide"
+                            />
+                            <div className="overlay"></div>
+                        </div>
+
+                        <Carousel.Caption className='carusel-cations'>
+                        <h5>Our Park Choose A Holiday Home</h5>
+                            <h1 className='carusel-header'>We Offer Premier <br /> Holiday Attractions</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos illo voluptatibus dolor optio laboriosam sit recusandae iste porro molestiae.</p>
+                            <button>GET STARTED</button>
+                            <button>CONTACT US</button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
             </div>
             {/* <Container className='banner-text'>
                 <Row className='d-flex justify-content-between align-items-center'>
