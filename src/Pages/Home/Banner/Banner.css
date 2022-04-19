@@ -14,11 +14,13 @@
 }
 
 .carusel-cations{
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 .carusel-header{
+    font-family: 'Carter One', cursive;
     font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .carsuel-items{
@@ -32,4 +34,40 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
+}
+
+.carusel-paragraph{
+    padding: 0 8rem;
+    margin: 1.5rem 0;
+}
+
+.button-design-1{
+    background-color: #36C5D5;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .2rem;
+    font-weight: 600;
+}
+
+.button-design-1:hover{
+    background-color: transparent;
+    border: 1px solid #36C5D5;
+    color: white;
+}
+
+
+.button-design-2{
+    background-color: white;
+    color: black;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .2rem;
+    font-weight: 600;
+}
+
+.button-design-2:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
