@@ -14,7 +14,7 @@ const Services = () => {
             .then(res => res.json())
             .then(data => {
                 setServices(data)
-                setDisplayServices(data.slice(0,6))
+                setDisplayServices(data.slice(0,8))
                 setIsLoading(true)
             });
     }, [])

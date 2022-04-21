@@ -46,6 +46,30 @@
         "ridePrice": 700,
         "discountDay": "Friday",
         "rideAge": 18
+    },
+    {
+        "name": "Pendulum Ride",
+        "img": "https://i.ibb.co/zsHQ2bW/pendulum-ride.jpg",
+        "description":"Pendulum rides are amusement rides based on the motion of a fixed pendulum. The configuration of the ride consists of a gondola, arm, and an axle. ",
+        "ridePrice": 800,
+        "discountDay": "Friday",
+        "rideAge": 18
+    },
+    {
+        "name": "Light Launch Ride",
+        "img": "https://i.ibb.co/SnMzv17/lighthouse-launch-ride.jpg",
+        "description":"The launched roller coaster is a modern form of roller coaster. A launched coaster initiates a ride with high amounts of acceleration.",
+        "ridePrice": 2000,
+        "discountDay": "Monday",
+        "rideAge": 25
+    },
+    {
+        "name": "Free Windwood Ride",
+        "img": "https://i.ibb.co/HHY89C0/free-windwood-ride.jpg",
+        "description":"Windwood started off the new year with a great turnout for riding camp .This past week the Windwood team had the first opportunity to free jump him.",
+        "ridePrice": 1500,
+        "discountDay": "Sunday",
+        "rideAge": 18
     }
 ]
 
