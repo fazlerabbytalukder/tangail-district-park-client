@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Spinner } from 'react-bootstrap';
 import Service from '../Service/Service';
+import titleImg from '../../../images/logo/heading border.png';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -24,15 +25,18 @@ const Services = () => {
             SetSeeAll(true)
         }
         if (seeAll === true) {
-            setDisplayServices(services.slice(0,6))
+            setDisplayServices(services.slice(0,8))
             SetSeeAll(false)
         }
     }
     return (
         <div className='container'>
-            <h1 className='text-center my-4 fw-bold'>Our Top Service Packages</h1>
+            <div className='my-4 d-flex flex-column justify-content-center align-items-center'>
+            <h1 className='fw-bold title'>Our Pricing</h1>
+            <img src={titleImg} alt="" />
+            </div>
             {
-                isLoading ? <Row xs={1} md={3} className="g-3">
+                isLoading ? <Row xs={1} md={4} className="g-3">
             {
                 displayServices.map(service => <Service key={service.id} service={service}></Service>)
             }
@@ -43,7 +47,7 @@ const Services = () => {
             }
 
             <div className='text-center mt-3'>
-            <button onClick={loadMore} className="btn btn-primary">{seeAll === false ? "See All Service" : "See Less"}</button>
+            <button style={{border:'none'}} onClick={loadMore} className="button-design-3">{seeAll === false ? "See All Service" : "See Less"}</button>
             </div>
         </div>
     );

@@ -1,6 +1,10 @@
 .card-backgrond{
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 32%, hsla(203, 60%, 65%, 1) 100%);
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 52%, hsla(186, 65%, 52%, 1) 100%);
 
+}
+
+.card-height{
+    height: 30rem;
 }
 
 .rounded-img{
@@ -13,4 +17,45 @@
 
 .height-img{
     height: 200px;
+}
+
+.price-discount{
+    margin-top: -3.3rem;
+}
+
+.ride-price-button{
+    padding: .7rem 1rem;
+    background-color: white;
+    border: 2px solid #36C5D5;
+    border-radius: .5rem;
+    font-size: larger;
+}
+
+.plan-button{
+    padding: .2rem 1.5rem;
+    background-color: #36C5D5;
+    color: white;
+    font-size: larger;
+    border: none;
+}
+
+.price-tag{
+    color: #36C5D5;
+}
+
+.card-title{
+    font-family: 'Carter One', cursive;
+    margin-top: 1rem;
+}
+
+.book-now-button{
+    border: none;
+    padding: .5rem 0;
+    border-radius: .3rem;
+    font-family: 'Carter One', cursive;
+    margin-left: 25%;
+}
+
+.title{
+    font-family: 'Carter One', cursive;
 }
