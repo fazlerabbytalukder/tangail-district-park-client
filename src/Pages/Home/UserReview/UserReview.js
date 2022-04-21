@@ -82,7 +82,7 @@ const UserReview = () => {
                             <Card>
                                 <div className="profile">
                                     <img className='user' src={review.image} alt="" />
-                                    <h5 className='reviewer-name'>{review.userName}</h5>
+                                    <h5 className='reviewer-name text-center'>{review.userName}</h5>
                                     <blockquote>{review.feedback.slice(0, 120)}</blockquote>
                                 </div>
                             </Card>
