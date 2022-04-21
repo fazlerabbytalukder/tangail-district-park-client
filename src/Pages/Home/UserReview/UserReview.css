@@ -17,6 +17,48 @@
     margin-left: 20px;
 }
 
-.button-top{
-    margin-top: 70px;
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50%-50px);
+    border: 10px solid white;
+}
+
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.reviewer-name{
+    font-family: 'Carter One', cursive;
+    color: #36C5D5;
+}
+
+blockquote::before{
+    content: open-quote;
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+blockquote::after{
+    content: close-quote;
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+
+.rounded-imgs{
+    border-radius: 50%;
 }

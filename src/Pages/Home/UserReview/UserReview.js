@@ -5,6 +5,7 @@ import useAuth from '../../../Hooks/useAuth';
 import { useHistory } from 'react-router';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import feedbackImg from '../../../images/banner/user review.jpg';
+import titleImg from '../../../images/logo/heading border.png';
 
 
 const UserReview = () => {
@@ -70,27 +71,30 @@ const UserReview = () => {
 
     return (
         <div className='container'>
-            <h2 className='text-center mt-5'>User Review</h2>
+            <div className='my-4 d-flex flex-column justify-content-center align-items-center mb-5 mt-4'>
+            <h1 className='fw-bold title'>User Review</h1>
+            <img src={titleImg} alt="" />
+            </div>
             <Container>
                 <Row xs={1} md={3} className="g-3">
                     {
                         displayReview.map(review => <Col>
-                            <Card className='shadow rounded-card h-100 border-0 mt-5'>
-                                <Card.Img className='card-img-top w-25 mx-auto mt-3 card-img' variant="top" src={review.image} />
-                                <Card.Body>
-                                    <Card.Title className='text-center'>{review.userName}</Card.Title>
-                                    <p className='text-center'>{review.feedback.slice(0, 80)}</p>
-                                </Card.Body>
+                            <Card>
+                                <div className="profile">
+                                    <img className='user' src={review.image} alt="" />
+                                    <h5 className='reviewer-name'>{review.userName}</h5>
+                                    <blockquote>{review.feedback.slice(0, 120)}</blockquote>
+                                </div>
                             </Card>
                         </Col>)
                     }
                 </Row>
-                <div className='text-center button-top'>
-                    <button onClick={loadMore} className="btn btn-primary">{seeAll === false ? "See All Review" : "See Less"}</button>
+                <div className='text-center mt-4'>
+                    <button style={{border:'none'}} onClick={loadMore} className="button-design-3">{seeAll === false ? "See All Review" : "See Less"}</button>
                 </div>
             </Container>
 
-            <div className='mt-5'>
+            <div className='my-5'>
                 <div className="shadow p-3">
                     <div className="row">
                         <div className="col-md-6">
@@ -103,12 +107,12 @@ const UserReview = () => {
                                 <form className="register-form form-design shadow" onSubmit={handleSubmit(onSubmit)}>
                                     <div className='d-flex justify-content-between align-items-center'>
                                         <div className='me-4'>
-                                            <img src={user.photoURL} alt="" className='ms-3' />
-                                            <h4 className='ms-4'>{user.displayName}</h4>
+                                            <img src={user.photoURL} alt="" className='ms-3 rounded-imgs mb-2' />
+                                            <h6 className='ms-4 fw-bold'>{user.displayName}</h6>
                                         </div>
                                         <div>
                                             <textarea required placeholder="Feedback US" type='textarea' className='w-100 mt-1 rounded' {...register("feedback")} />
-                                            <input style={{backgroundColor:'blue', color:'white'}} type="submit" />
+                                            <input className='button-design-3' type="submit" />
                                         </div>
                                     </div>
                                 </form>
