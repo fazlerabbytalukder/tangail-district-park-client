@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import Header from '../../Shared/Header/Header';
 import ManageSingleBooking from '../ManageSinglebooking/ManageSingleBooking';
 import './ManageAllBooking.css';
 
@@ -12,6 +13,7 @@ const ManageAllBooking = () => {
     }, [])
     return (
         <div className='container'>
+            <Header></Header>
             <h3 className='text-center my-4'>Users Information</h3>
             <Table responsive bordered className='no-wrap'>
                 <thead>

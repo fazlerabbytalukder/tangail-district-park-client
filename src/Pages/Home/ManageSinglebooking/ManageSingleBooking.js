@@ -56,8 +56,8 @@ const ManageSingleBooking = (props) => {
                 <td>{email}</td>
                 <td>{date}</td>
                 <td>{service}</td>
-                <td>{status}</td>
-                <td><button onClick={() => handleUpdate(_id)} className='btn btn-primary' >Approve</button></td>
+                <td>{status} {status === "pending" ? <i class="fa-solid fa-circle-check text-danger fs-5"></i> : <i className="fa-solid fa-circle-check text-success fs-5"></i>}</td>
+                <td><button onClick={() => handleUpdate(_id)} style={{border:'none'}} className='button-design-3' >{status === "pending" ? <span>Approve</span> : <span>Done</span> }</button></td>
                 <td><button onClick={() => handleDelete(_id)} className='btn btn-secondary'>Delete</button></td>
             </tr>
         </tbody>
