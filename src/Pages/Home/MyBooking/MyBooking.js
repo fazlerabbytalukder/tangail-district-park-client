@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import useAuth from '../../../Hooks/useAuth';
+import Header from '../../Shared/Header/Header';
 
 const MyBooking = () => {
     const [myBooking, setMyBooking] = useState([]);
@@ -31,6 +32,7 @@ const MyBooking = () => {
     }
     return (
         <Container>
+            <Header></Header>
             <Row xs={1} md={3} className="g-3">
                 {
                     myBooking.map(booking => <Col>
