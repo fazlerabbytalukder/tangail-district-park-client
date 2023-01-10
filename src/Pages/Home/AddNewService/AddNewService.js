@@ -7,7 +7,7 @@ import Header from '../../Shared/Header/Header';
 const AddNewService = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/services', {
+        fetch('https://tangail-district-park-server.onrender.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

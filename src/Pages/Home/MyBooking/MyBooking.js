@@ -7,7 +7,7 @@ const MyBooking = () => {
     const [myBooking, setMyBooking] = useState([]);
     const { user } = useAuth();
     useEffect(() => {
-        fetch(`http://localhost:5000/myBooking/${user.uid}`)
+        fetch(`https://tangail-district-park-server.onrender.com/myBooking/${user.uid}`)
             .then(res => res.json())
             .then(data => setMyBooking(data))
     }, [])
@@ -16,7 +16,7 @@ const MyBooking = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/myBooking/${id}`;
+            const url = `https://tangail-district-park-server.onrender.com/myBooking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

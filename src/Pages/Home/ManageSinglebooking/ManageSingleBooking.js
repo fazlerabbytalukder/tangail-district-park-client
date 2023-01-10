@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageSingleBooking = (props) => {
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/myBooking')
+        fetch('https://tangail-district-park-server.onrender.com/myBooking')
             .then(res => res.json())
             .then(data => setMyOrder(data))
     }, []);
@@ -12,7 +12,7 @@ const ManageSingleBooking = (props) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/myBooking/${id}`;
+            const url = `https://tangail-district-park-server.onrender.com/myBooking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -30,7 +30,7 @@ const ManageSingleBooking = (props) => {
     }
 
     const handleUpdate = (id) => {
-        const url = `http://localhost:5000/myBooking/${id}`;
+        const url = `https://tangail-district-park-server.onrender.com/myBooking/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

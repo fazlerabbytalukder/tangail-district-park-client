@@ -10,7 +10,7 @@ const Services = () => {
     const [seeAll, SetSeeAll] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://tangail-district-park-server.onrender.com/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)

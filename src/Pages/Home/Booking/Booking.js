@@ -8,7 +8,7 @@ const Booking = () => {
     const [services, setServices] = useState([]);
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://tangail-district-park-server.onrender.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
@@ -24,7 +24,7 @@ const Booking = () => {
         data.img = services.img;
         data.status = "pending";
 
-        fetch('http://localhost:5000/regUser', {
+        fetch('https://tangail-district-park-server.onrender.com/regUser', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

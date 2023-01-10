@@ -14,7 +14,7 @@ const UserReview = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [seeAll, SetSeeAll] = useState(false);
     useEffect(() => {
-        fetch(`http://localhost:5000/userReview`)
+        fetch(`https://tangail-district-park-server.onrender.com/userReview`)
             .then(res => res.json())
             .then(data => {
                 setReview(data)
@@ -46,7 +46,7 @@ const UserReview = () => {
         console.log(data);
 
         if (user.email && data.feedback !== '') {
-            fetch('http://localhost:5000/userReview', {
+            fetch('https://tangail-district-park-server.onrender.com/userReview', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

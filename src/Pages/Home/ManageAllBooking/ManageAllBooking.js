@@ -7,7 +7,7 @@ import './ManageAllBooking.css';
 const ManageAllBooking = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/myBooking')
+        fetch('https://tangail-district-park-server.onrender.com/myBooking')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, [])
