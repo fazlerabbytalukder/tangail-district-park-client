@@ -7,7 +7,7 @@ const MyBooking = () => {
     const [myBooking, setMyBooking] = useState([]);
     const { user } = useAuth();
     useEffect(() => {
-        fetch(`https://pure-mountain-33189.herokuapp.com/myBooking/${user.uid}`)
+        fetch(`http://localhost:5000/myBooking/${user.uid}`)
             .then(res => res.json())
             .then(data => setMyBooking(data))
     }, [])
@@ -16,7 +16,7 @@ const MyBooking = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `https://pure-mountain-33189.herokuapp.com/myBooking/${id}`;
+            const url = `http://localhost:5000/myBooking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

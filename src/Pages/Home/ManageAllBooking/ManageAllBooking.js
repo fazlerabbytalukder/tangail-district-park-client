@@ -7,7 +7,7 @@ import './ManageAllBooking.css';
 const ManageAllBooking = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('https://pure-mountain-33189.herokuapp.com/myBooking')
+        fetch('http://localhost:5000/myBooking')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, [])

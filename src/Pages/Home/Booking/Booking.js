@@ -8,7 +8,7 @@ const Booking = () => {
     const [services, setServices] = useState([]);
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`https://pure-mountain-33189.herokuapp.com/services/${serviceId}`)
+        fetch(`http://localhost:5000/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
@@ -24,7 +24,7 @@ const Booking = () => {
         data.img = services.img;
         data.status = "pending";
 
-        fetch('https://pure-mountain-33189.herokuapp.com/regUser', {
+        fetch('http://localhost:5000/regUser', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

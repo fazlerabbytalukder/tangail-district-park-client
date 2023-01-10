@@ -10,7 +10,7 @@ const Services = () => {
     const [seeAll, SetSeeAll] = useState(false);
 
     useEffect(() => {
-        fetch('https://pure-mountain-33189.herokuapp.com/services')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -32,7 +32,7 @@ const Services = () => {
     return (
         <div className='container'>
             <div className='my-4 d-flex flex-column justify-content-center align-items-center'>
-            <h1 className='fw-bold title'>Our Pricing</h1>
+            <h1 className='fw-bold title'>Our Best Pricing</h1>
             <img src={titleImg} alt="" />
             </div>
             {

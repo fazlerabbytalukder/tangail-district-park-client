@@ -14,7 +14,7 @@ const UserReview = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [seeAll, SetSeeAll] = useState(false);
     useEffect(() => {
-        fetch(`https://pure-mountain-33189.herokuapp.com/userReview`)
+        fetch(`http://localhost:5000/userReview`)
             .then(res => res.json())
             .then(data => {
                 setReview(data)
@@ -46,7 +46,7 @@ const UserReview = () => {
         console.log(data);
 
         if (user.email && data.feedback !== '') {
-            fetch('https://pure-mountain-33189.herokuapp.com/userReview', {
+            fetch('http://localhost:5000/userReview', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
